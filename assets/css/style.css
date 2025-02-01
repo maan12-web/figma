@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+:root {
+    --web-color-primaery: #b9ff66;
+    --web-color-dark: #000000;
+    --web-color-light: #fff;
+    --web-section-color: #f3f3f3;
+    --web-section-dark-color: #191a23;
+    --font-primary: 'Space Grotesk';
+}
+
+.request-btn {
+    padding: 15px 20px;
+    border-radius: 14px;
+    border: 1px solid;
+    background-color: transparent;
+    transition: all 0.4s linear;
+}
+
+.request-btn:hover {
+    background-color: var(--web-color-dark);
+    color: var(--web-color-light);
+}
+
+.menu-btn {
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+}
+
+.navigating-content h1 {
+    color: var(--web-color-dark);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.navigating-content p {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    color: var(--web-color-dark);
+}
+
+.navigating-content button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--web-color-dark);
+    color: var(--web-color-light);
+    font-family: var(--font-primary);
+    transition: all 0.3s linear;
+    border: 1px solid var(--web-color-dark);
+}
+
+.navigating-content button:hover {
+    background-color: var(--web-color-light);
+    color: var(--web-color-dark);
+    border: 1px solid var(--web-color-dark);
+}
+
+.services {
+    width: fit-content;
+    background-color: var(--web-color-primaery);
+    padding: 5px 5px;
+    border-radius: 6px;
+}
+
+.services h3 {
+    font-weight: 500;
+    color: var(--web-color-dark);
+}
+
+.services-content p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.optimization {
+    background-color: var(--web-section-color);
+    border-radius: 40px;
+    border: 1px solid;
+    border-bottom: 5px solid;
+}
+
+.advertising {
+    background-color: var(--web-color-primaery);
+    border-radius: 40px;
+    border: 1px solid;
+    border-bottom: 5px solid;
+}
+
+.marketing {
+    background-color: var(--web-section-dark-color);
+    border-radius: 40px;
+    border: 1px solid;
+    border-bottom: 5px solid;
+}
+
+.bg-text-primary {
+    background-color: var(--web-color-primaery);
+}
+
+.bg-text-light {
+    background-color: var(--web-color-light);
+}
+
+.circle-black {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--web-color-dark);
+}
+
+.happen {
+    background-color: var(--web-section-color);
+    border-radius: 50px;
+}
+
+.happen-title {
+    font-size: 30px;
+}
+
+.happen-dis {
+    font-size: 18px;
+}
+
+.happen-btn {
+    padding: 15px 20px;
+    border: none;
+    background-color: var(--web-color-dark);
+    color: var(--web-color-light);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.happen-btn:hover {
+    background-color: var(--web-color-primaery);
+    color: var(--web-color-dark);
+}
+
+.case-study {
+    background-color: var(--web-section-dark-color);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.b-right-white {
+    border-right: 1px solid var(--web-color-light);
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-bottom: 5px solid;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    cursor: pointer;
+    background-color:var(--web-section-color);
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: var(--web-section-color);
+}
+
+.accordion-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.accordion-header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.accordion-content {
+    padding: 15px;
+    background-color: var(--web-color-primaery);
+    display: none;
+    animation: slideDown 0.3s ease-in-out;
+}
+
+.accordion-item.active .accordion-header {
+    background-color: var(--web-color-primaery);
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+.team{
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--web-color-dark);
+    border-bottom: 5px solid;
+}
+.team h4{
+    border-bottom: 1px solid;
+}
+.team-img h3{
+    align-items: end;
+    /* justify-content: end; */
+}
+.social-img{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.slider{
+    background-color: var(--web-section-dark-color);
+    border-radius: 40px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--web-color-primaery);
+    border-radius: 20px;
+}
+
+.testimonials {
+    cursor: pointer;
+}
+.testimonials p{
+    font-size: 18px;
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--web-color-primaery, var(--swiper-theme-color)) !important;
+}
+
+.swiper-pagination {
+    position: relative !important;
+    color: var(--web-color-primaery) !important;
+}
+/*  */
+.form-section{
+    background-color: var(--web-section-color);
+    padding: 60px 0 60px 100px;
+    border-radius: 40px;
+}
+.form-img img{
+    position: absolute;
+    right: 0px;
+}
+.form-btn button{
+    transition: all 0.3s linear;
+    border: none;
+}
+.form-btn button:hover{
+    background-color: var(--web-color-primaery) !important;
+    color: var(--web-color-dark) !important;
+    border: 0.5px solid var(--web-color-dark);
+    transform: scale(1.05);
+} 
+.form-check-input:checked{
+    background-color: var(--web-color-primaery) !important;
+    border-color: var(--web-color-primaery) !important;
+}
+.footer-content{
+    background-color: var(--web-section-dark-color);
+    border-top-left-radius: 40px !important;
+    border-top-right-radius: 40px !important
+}
+.social-icon i{
+    background-color: var(--web-color-light);
+    color: var(--web-color-dark);
+    border-radius: 50%;
+    padding: 5px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.social-icon i:hover{
+    background-color: var(--web-color-primaery);
+}
